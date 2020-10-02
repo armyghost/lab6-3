@@ -7,20 +7,16 @@ do{
 printf("Enter number : ");    
 scanf("%d",&num);
 
-  m=num/2;    
-  for(i=2;i<=m;i++)    
+ if((num==1 || num%2 == 0 || num%3 == 0 || num%5==0 || num%7==0) 
+            && (num!=2 && num!=3 && num!=5 && num!=7))  
   {    
-  if(num%i==0)    
-  {    
-  printf("Not prime number!!!\n");    
-  flag=1;    
-  break;    
+  printf("Not prime number!!!\n");        
   }    
-  }    
-  if(flag==0)
+      
+  else{
   for(j=1;j<13;j++)
-       printf("%d x %d = %d\n",num,j,j*num);    
-}while(num > 0);      
+       printf("%d x %d = %d\n",num,j,j*num);   } 
+}while(num >= 0);      
 
 
   return 0;
