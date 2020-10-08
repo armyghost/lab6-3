@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-  int num,i,j,m=0,flag=0;
+  int num,i,j;
 
 while(num >= 0)  {      
 printf("Enter number : ");    
